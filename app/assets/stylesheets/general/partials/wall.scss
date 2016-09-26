@@ -1,0 +1,14 @@
+@include breakpoint($xs)
+{
+  .wall
+  {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+@include breakpoint($medium)
+{
+
+
+}

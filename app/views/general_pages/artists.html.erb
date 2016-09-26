@@ -1,0 +1,83 @@
+<div class="white_space"></div>
+
+<div class="artists">
+  <h2 class="highlight">ARTISTAS GROOVE</h2>
+  <% @artists.each do |artist| %>
+  <div class="artist center">
+    <%= link_to artist_path(artist) do %>
+        <%#= artist.name %>
+        <%= image_tag artist.avatar.url(:medium_large), class: "artists_image" %>
+    <% end %>
+  </div>
+  <% end %>
+</div>
+
+<div class="separator">
+  <div class="info_rectangle">
+    <h3>PARQUE DE PALMELA<span> - CASCAIS</span></h3>
+    <h4>24 - 25 - 26 JUNHO</h4>
+  </div>
+  <div class="call_to_buy">
+    <a href="http://www.bol.pt/Comprar/Bilhetes/35492-cascais_groove_16-parque_de_palmela/" target="_blank">
+      <button class="primary_button medium_button">
+        <i class="fa fa-ticket"></i> COMPRAR BILHETES
+      </button>
+    </a>
+  </div>
+</div>
+
+<h2 style="display: none;">Parceiros</h2>
+
+<div class="partners">
+  <div class="normais">
+    <p class="left min_width_full highlight">APOIO:</p>
+    <a href="http://www.turismodeportugal.pt/" target="_blank">
+      <%= image_tag("logo6.png", :class => "header_image") %>
+    </a>
+  </div>
+  <div class="parceiro">
+    <p class="left min_width_full highlight">PARCEIRO:</p>
+    <a href="http://www.organictakeaway.pt" target="_blank">
+      <%= image_tag("logo10.png", :class => "header_image") %>
+    </a>
+    <a href="http://www.2eastworld.com/" target="_blank">
+      <%= image_tag("logo12.png", :class => "header_image") %>
+    </a>
+  </div>
+  <div class="media">
+    <p class="left min_width_full highlight">MEDIA PARTNERS:</p>
+    <a href="http://expresso.sapo.pt/" target="_blank">
+      <%= image_tag("logo1.png", :class => "header_image") %>
+    </a>
+    <a href="http://sicnoticias.sapo.pt/" target="_blank">
+      <%= image_tag("logo3.png", :class => "header_image") %>
+    </a>
+    <a href="http://rr.sapo.pt/" target="_blank">
+      <%= image_tag("logo2.png", :class => "header_image") %>
+    </a>
+  </div>
+  <div class="sponsors">
+    <p class="left min_width_full highlight">SPONSORS:</p>
+    <a href="http://www.mazda.pt/" target="_blank">
+      <%= image_tag("logo7.png", :class => "header_image") %>
+    </a>
+    <a href="http://www.santogal.pt/" target="_blank">
+      <%= image_tag("logo8.png", :class => "header_image") %>
+    </a>
+    <a href="http://nutri-ventures.com/pt/" target="_blank">
+      <%= image_tag("logo9.png", :class => "header_image") %>
+    </a>
+    <a href="http://www.bairrodosmuseus.pt/" target="_blank">
+      <%= image_tag("logo11.png", :class => "header_image") %>
+    </a>
+  </div>
+  <div class="organizacao">
+    <p class="left min_width_full highlight">CO-ORGANIZAÇÃO:</p>
+    <a href="http://www.cascais.pt/" target="_blank">
+      <%= image_tag("logo5.png", :class => "header_image") %>
+    </a>
+    <a href="http://www.domingonomundo.pt/" target="_blank">
+      <%= image_tag("logo0.png", :class => "header_image") %>
+    </a>
+  </div>
+</div>

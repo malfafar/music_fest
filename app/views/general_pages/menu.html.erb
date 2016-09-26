@@ -1,0 +1,20 @@
+<nav class="menu">
+
+  <%= link_to root_path, 'data-no-turbolink' => true do %>
+    <%= image_tag("logo_menu.png", :class => "logo") %>
+  <% end %>
+
+  <%= fa_icon "bars", :class =>"burger" %>
+
+  <ul class="nav_list">
+      <li>
+        <%= link_to('INFORMAÇÕES', root_path)  %>
+      </li>
+      <li>
+        <%= link_to('ARTISTAS', root_path)  %>
+      </li>
+      <li>
+        <%= link_to('PARCEIROS', root_path)  %>
+      </li>
+  </ul>
+</nav>

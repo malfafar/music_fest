@@ -1,0 +1,480 @@
+.index
+{
+	display: inline-block;
+	max-width: 100%;
+}
+
+.header_image
+{
+	height: 100%;
+	max-height: 100%;
+	overflow: hidden;
+	top: 0;
+
+	img
+	{
+		max-width: 100%;
+	}
+}
+
+@include breakpoint($xs)
+{
+	.artist_index
+	{
+		margin-top: -4px;
+		background-color: $dark_background;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+		height: auto;
+		overflow: auto;
+
+		li
+		{
+			@include span(26 of 58);
+			margin-left: span(2 of 58);
+			margin-bottom: 10px;
+
+			img
+			{
+				max-width: 100%;
+				height: auto;
+			}
+
+			h5
+			{
+				font-size: 14px;
+				line-height: 14px;
+			}
+
+			h6
+			{
+				margin-top: 8px;
+				font-size: 10px;
+			}
+		}
+	}
+
+	.hover_container
+	{
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+	.info_reveal
+	{
+		height: 100%;
+		transition: all .3s ease-in 0s;
+		-moz-transition: all .3s ease-in 0s;
+		-webkit-transition: all .23s ease-in 0s;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -100%;
+		background: $dark_background;
+		opacity: 0.8;
+
+		.logo_hover
+		{
+			margin-top: 20px;
+			width: 36%;
+		}
+	}
+
+
+	.responsive_grid
+	{
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.responsive_grid li
+	{
+		display: block;
+		height: auto;
+		float: left;
+	}
+
+	.responsive_grid li:hover .info_reveal,
+	.responsive_grid li:focus .info_reveal
+	{
+		left: 0;
+		top: 0;
+		transition: all .3s ease-out .1s;
+		-moz-transition: all .3s ease-out .1s;
+		-webkit-transition: all .3s ease-out .1s;
+	}
+}
+
+@include breakpoint($medium)
+{
+	.artist_index
+	{
+		li
+		{
+			@include span(14 of 61);
+			margin-left: span(1 of 61);
+
+			h5
+			{
+				font-size: 22px;
+				line-height: 22px;
+			}
+
+			h6
+			{
+				margin-top: 18px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.info
+	{
+  	height: 100%;
+
+		img
+		{
+		  width: 100%;
+		  transition: all .4s ease-out .1s;
+		  -moz-transition: all .4s ease-out .1s;
+		  -webkit-transition: all .4s ease-out .1s;
+		}
+	}
+
+	.info_reveal
+	{
+		height: 100%;
+		transition: all .3s ease-in 0s;
+		-moz-transition: all .3s ease-in 0s;
+		-webkit-transition: all .23s ease-in 0s;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -100%;
+		background: $dark_background;
+		opacity: 0.8;
+
+		.logo_hover
+		{
+			margin-top: 40px;
+			width: 50%;
+		}
+	}
+}
+
+@include breakpoint($xl)
+{
+	.info_reveal
+	{
+		.logo_hover
+		{
+			margin-top: 70px;
+			width: 50%;
+		}
+	}
+
+	.artist_index
+	{
+		li
+		{
+			@include span(14 of 61);
+			margin-left: span(1 of 61);
+
+			h5
+			{
+				font-size: 26px;
+				line-height: 26px;
+			}
+
+			h6
+			{
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+
+@include breakpoint($xs)
+{
+	.partners
+	{
+		text-align: center;
+
+		.normais
+		{
+			@include span(10 of 12);
+			margin-left: span(1 of 12);
+
+			p
+			{
+				font-size: 16px;
+				font-weight: $bold_font;
+			}
+
+			img
+			{
+				@include span(4 of 19);
+				margin-left: span(1 of 19);
+				margin-bottom: 30px;
+				max-width: 100%;
+			}
+		}
+
+		.parceiro
+		{
+			@include span(10 of 12);
+			margin-left: span(1 of 12);
+
+			p
+			{
+				font-size: 16px;
+				font-weight: $bold_font;
+			}
+
+			img
+			{
+				@include span(4 of 19);
+				margin-left: span(1 of 19);
+				margin-bottom: 30px;
+				max-width: 100%;
+			}
+		}
+
+		.media
+		{
+			@include span(10 of 12);
+			margin-left: span(1 of 12);
+
+			p
+			{
+				font-size: 16px;
+				font-weight: $bold_font;
+			}
+
+			img
+			{
+				@include span(4 of 19);
+				margin-left: span(1 of 19);
+				margin-bottom: 30px;
+				max-width: 100%;
+			}
+		}
+
+		.sponsors
+		{
+			@include span(10 of 12);
+			margin-left: span(1 of 12);
+
+			p
+			{
+				font-size: 16px;
+				font-weight: $bold_font;
+			}
+
+			img
+			{
+				@include span(4 of 20);
+				margin-left: span(1 of 20);
+				margin-bottom: 30px;
+				max-width: 100%;
+			}
+		}
+
+		.organizacao
+		{
+			@include span(10 of 12);
+			margin-left: span(1 of 12);
+
+			p
+			{
+				font-size: 16px;
+				font-weight: $bold_font;
+			}
+
+			img
+			{
+				@include span(4 of 19);
+				margin-left: span(1 of 19);
+				margin-bottom: 30px;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+
+@include breakpoint($medium)
+{
+	.partners
+	{
+		.normais
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@include span(1 of 17);
+			margin-left: span(1 of 17);
+
+			img
+			{
+				@include span(4 of 5);
+				margin-left: 0;
+				margin-right: span(1 of 5);
+				max-width: 100%;
+			}
+		}
+
+		.parceiro
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@include span(2 of 17);
+			margin-left: span(1 of 17);
+
+			img
+			{
+				@include span(4 of 11);
+				margin-left: 0;
+				margin-right: span(1 of 11);
+				max-width: 100%;
+			}
+		}
+
+		.media
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@include span(3 of 17);
+			margin-left: span(1 of 17);
+
+			img
+			{
+				@include span(4 of 15);
+				margin-left: 0;
+				margin-right: span(1 of 15);
+				max-width: 100%;
+			}
+		}
+
+		.sponsors
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@include span(3 of 17);
+			margin-left: span(1 of 17);
+
+			img
+			{
+				@include span(4 of 20);
+				margin-left: 0;
+				margin-right: span(1 of 20);
+				max-width: 100%;
+			}
+		}
+
+		.organizacao
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@include span(2 of 17);
+			margin-left: span(1 of 17);
+
+			img
+			{
+				@include span(4 of 11);
+				margin-left: 0;
+				margin-right: span(1 of 11);
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@include breakpoint($xs)
+{
+	.separator
+	{
+		.info_rectangle
+		{
+			@include span(12 of 12);
+			background-color: $highlight;
+			height: 180px;
+			text-align: center;
+
+			h3
+			{
+				padding-top: 0px;
+				padding-left: 0px;
+				margin-bottom: 10px;
+				font-size: 28px;
+
+				span
+				{
+					font-size: 18px;
+				}
+			}
+
+			h4
+			{
+				padding-left: 10px;
+			}
+		}
+
+		.call_to_buy
+		{
+			@include span(12 of 12);
+			background-color: $light_background;
+			height: 180px;
+			text-align: center;
+
+			.primary_button
+			{
+				margin-top: 70px;
+			}
+		}
+	}
+
+}
+
+@include breakpoint($medium)
+{
+
+	.separator
+	{
+		.info_rectangle
+		{
+			text-align: left;
+			@include span(7 of 12);
+
+			h3
+			{
+				padding-top: 20px;
+				padding-left: 100px;
+				margin-bottom: 10px;
+				font-size: 36px;
+
+				span
+				{
+					font-size: 22px;
+				}
+			}
+
+			h4
+			{
+				padding-left: 100px;
+				font-size: 28px;
+			}
+		}
+
+		.call_to_buy
+		{
+			@include span(5 of 12);
+		}
+	}
+
+}

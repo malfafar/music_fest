@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="bluegallery">
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <!--<p class="description"></p>-->
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <!-- <ol class="indicator"></ol> -->
+    </div>
+
+  	<div id="links">
+      <% @photos.each do |photo| %>
+        <%= link_to photo.photo.url(:full), title: photo.title do %>
+          <%= image_tag photo.photo.url(:gallery), class: "gallery_thumb" %>
+        <% end %>
+        <!-- <strong> description </strong>
+        <%#= photo.description %> -->
+      <% end %>
+  	</div>
+  </div>
+
+  <div class="paginate_wrapper">
+    <%= paginate @photos %>
+  </div>
+</div>

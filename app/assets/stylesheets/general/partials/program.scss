@@ -1,0 +1,120 @@
+.being_zone
+{
+  font-weight: $bold_font;
+  color: $being_zone_color;
+}
+
+.organic_zone
+{
+  font-weight: $bold_font;
+  color: $organic_zone_color;
+}
+
+
+.kids_zone
+{
+  font-weight: $bold_font;
+  color: $kids_zone_color;
+}
+
+
+.music_zone
+{
+  font-weight: $bold_font;
+  color: $music_zone_color;
+}
+
+@include breakpoint($xs)
+{
+  .dark_text
+  {
+    a
+    {
+      color: $text_highlight;
+    }
+
+    a:hover
+    {
+      color: $text_hover;
+    }
+  }
+
+  .container_program
+  {
+    @include span(14 of 16);
+    margin-left: span(1 of 16);
+    margin-bottom: 40px;
+  }
+
+  .program_choose_box
+  {
+    background-color: $highlight;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: $text_light;
+    font-size: 32px;
+    font-weight: $bold_font;
+  }
+
+  .program_info
+  {
+    margin-top: 50px;
+    p
+    {
+      font-size: 14px;
+
+      a
+      {
+        color: $text_highlight;
+      }
+
+      a:hover
+      {
+        color: $text_hover;
+      }
+    }
+  }
+}
+
+@include breakpoint($medium)
+{
+  .container_program
+  {
+    @include span(8 of 12);
+    margin-left: span(2 of 12);
+    margin-bottom: 60px;
+  }
+
+  .program_choose_box
+  {
+    padding: 20px 40px 20px 40px;
+    text-align: right;
+  }
+}
+
+
+.no_display_program
+{
+  display: none;
+}
+
+.display_program
+{
+  display: block;
+}
+
+.underline
+{
+  text-decoration: underline;
+}
+
+.button_day
+{
+  cursor: pointer;
+}
+
+.button_day:hover
+{
+  color: $text_light_hover;
+}

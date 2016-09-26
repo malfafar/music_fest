@@ -1,0 +1,74 @@
+@include breakpoint($xs)
+{
+  .container_info
+  {
+    @include span(14 of 16);
+    margin-left: span(1 of 16);
+    margin-bottom: 40px;
+
+    img
+    {
+      max-width: 100%;
+    }
+  }
+
+  .highlight_info
+  {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    p
+    {
+      font-size: 28px;
+      margin: 6px;
+    }
+  }
+
+  .icon_price
+  {
+    padding-left: 10px;
+    padding-right: 16px;
+    color: $text_highlight;
+  }
+
+  #pricing
+  {
+    padding-top: 110px;
+  }
+
+  .top
+  {
+    margin-top: 50px;
+  }
+
+  .final_info
+  {
+    margin-top: 50px;
+
+    p
+    {
+      font-size: 14px;
+
+      a
+      {
+        color: $text_highlight;
+      }
+
+      a:hover
+      {
+        color: $text_hover;
+      }
+    }
+  }
+
+}
+
+@include breakpoint($medium)
+{
+  .container_info
+  {
+    @include span(8 of 12);
+    margin-left: span(2 of 12);
+    margin-bottom: 60px;
+  }
+
+}

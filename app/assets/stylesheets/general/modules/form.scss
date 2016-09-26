@@ -1,0 +1,54 @@
+@include breakpoint($xs)
+{
+  #mce-responses
+  {
+    display: none;
+  }
+
+  .mc-field-group
+  {
+    display: inline-block;
+  }
+
+  .clear
+  {
+    display: inline-block;
+  }
+
+  .email
+  {
+    background-color: transparent;
+    border: 2px solid $form_outline;
+    padding: 8px;
+    color: $text_light;
+    font-family: 'Work Sans', sans-serif;
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  input:focus
+  {
+    outline:none;
+  }
+
+  .subscribe
+  {
+    color:$text_light;
+    background-color: $highlight;
+    padding: 13px 26px 11px 26px;
+    border:none;
+    text-transform: uppercase;
+    margin-left: -6px;
+    font-size: 10px;
+    font-weight: $bold_font;
+    cursor: pointer;
+  }
+}
+
+@include breakpoint($medium)
+{
+  .email
+  {
+    width: 360px;
+  }
+}

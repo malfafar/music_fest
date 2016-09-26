@@ -1,0 +1,32 @@
+
+
+<!-- <div class="wall">
+  <div data-is
+       data-is-access-token=""
+       data-is-source="@betches"
+       data-is-width="auto"
+       data-is-height="750px"
+       data-is-columns="5"
+       data-is-rows="3"
+       data-is-direction="vertical"
+       data-is-lang="en"
+       data-is-popup-info="">
+  </div>
+</div> -->
+
+
+
+
+<div class="wall"></div>
+<script>
+    $('.wall').instaShow({
+        accessToken: '<%= Rails.application.secrets[:instagram_access_token] %>',
+        source: '@groove_cascais',
+        width: 'auto',
+        height: '750px',
+        columns: 5,
+        rows: 3,
+        direction: 'vertical',
+        lan: 'en'
+    });
+</script>

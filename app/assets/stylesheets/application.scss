@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+//External Libraries
+@import "susy";
+@import "breakpoint";
+@import "font-awesome";
+@import "social-share-button";
+@import "general/modules/instashow/jquery.instashow.min.css";
+@import "blueimp-gallery";
+
+// @import "social-share-button";
+//Internal Libraries
+
+//mixins
+@import "general/mixins/breakpoint_init.scss";
+@import "general/mixins/sticky_footer.scss";
+
+//modules
+@import "general/modules/animate.scss";
+@import "general/modules/variables.scss";
+@import "general/modules/colors.scss";
+@import "general/modules/styleguide.scss";
+@import "general/modules/navigation.scss";
+@import "general/modules/sidenavigation.scss";
+@import "general/modules/selectbox.scss";
+@import "general/modules/footer.scss";
+@import "general/modules/form.scss";
+
+//partials
+@import "general/partials/homepage.scss";
+@import "general/partials/gallery.scss";
+@import "general/partials/contacts.scss";
+@import "general/partials/program.scss";
+@import "general/partials/artists.scss";
+@import "general/partials/info.scss";
+@import "general/partials/wall.scss";

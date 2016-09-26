@@ -1,0 +1,209 @@
+/* Footer */
+
+@include breakpoint($xs)
+{
+#pre_footer
+{
+	width: 100%;
+	display: block;
+	background-color: $pre_footer;
+	color: $text_light;
+	margin: 0px;
+	padding: 40px 0px 40px 0px;
+	overflow: auto;
+
+	#pre_footer_col1
+	{
+		@include span(12 of 12);
+		text-align: center;
+	}
+
+	#pre_footer_col2
+	{
+		@include span(12 of 12);
+		text-align: center;
+
+		i
+		{
+			color: $highlight;
+			font-size: 30px;
+			padding-right: 16px;
+			cursor: pointer;
+		}
+	}
+}
+}
+
+@include breakpoint($medium)
+{
+#pre_footer
+{
+
+	#pre_footer_col1
+	{
+		@include span(7 of 12);
+		margin-left: span(1 of 12);
+		text-align: left;
+	}
+
+	#pre_footer_col2
+	{
+		@include span(3 of 12);
+		margin-right: span(1 of 12);
+		text-align: right;
+	}
+}
+}
+
+@include breakpoint($xs)
+{
+	#footer
+	{
+		z-index: 100;
+		background-color: $footer;
+		padding-top: 30px;
+
+		.footer_col
+		{
+			display: inline-block;
+			color: $text_light;
+			width: 100%;
+			max-width: 100%;
+			margin: 0;
+			padding: 0;
+
+			ul
+			{
+				list-style-type: none;
+				margin-top: 20px;
+			}
+
+			li
+			{
+				padding-right: 20px;
+				display: inline;
+				font-size: 10px;
+				text-transform: uppercase;
+				font-weight: $bold_font;
+
+				a, a:visited
+				{
+					color: $text_light;
+				}
+			}
+		}
+
+		#footer_col1
+		{
+			@include span(12 of 14);
+			margin-left: span(1 of 14);
+			text-align: left;
+		}
+
+		#footer_col2
+		{
+			@include span(12 of 14);
+			margin-right: span(1 of 14);
+			text-align: right;
+
+			i
+			{
+				padding-right: 6px;
+			}
+
+			li
+			{
+				padding-bottom: 10px;
+
+				img
+				{
+					max-width: 100px;
+					padding-right: 20px;
+				}
+
+				a
+				{
+					font-size: 12px;
+					color: $highlight;
+				}
+			}
+		}
+
+		.small_logo
+		{
+			max-width: 100px;
+		}
+	}
+}
+
+@include breakpoint($medium)
+{
+	#footer
+	{
+		.footer_col
+		{
+			display: inline-block;
+			width: 100%;
+			max-width: 100%;
+
+			ul
+			{
+				list-style-type: none;
+				margin-top: 50px;
+			}
+
+			li
+			{
+				padding-right: 20px;
+				display: inline;
+				font-size: 12px;
+
+				a, a:visited
+				{
+					color: $text_light;
+				}
+			}
+		}
+
+		#footer_col1
+		{
+			@include span(14 of 24);
+			margin-left: span(1 of 24);
+			text-align: left;
+		}
+
+		#footer_col2
+		{
+			@include span(8 of 24);
+			margin-right: span(1 of 24);
+			text-align: right;
+
+			i
+			{
+				padding-right: 6px;
+			}
+
+			li
+			{
+				padding-bottom: 10px;
+
+				img
+				{
+					max-width: 120px;
+					padding-right: 40px;
+				}
+
+				a
+				{
+					font-size: 12px;
+					color: $highlight;
+				}
+			}
+		}
+
+		.small_logo
+		{
+			max-width: 100px;
+		}
+	}
+}

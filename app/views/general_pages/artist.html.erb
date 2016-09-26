@@ -1,0 +1,67 @@
+<div class="white_space"></div>
+<div class="artist_page">
+  <div class="column_1">
+    <h2><%= @artist.name %></h2>
+    <%= image_tag @artist.photo.url(:medium), class: "artist_image" %>
+
+    <div class="share">
+      <p class="text_dark">
+        SHARE:
+      </p>
+        <%= social_share_button_tag(@artist.name + "| Cascais Groove 2016", :popup => "true", :class => "social" ) %>
+    </div>
+
+    <div class="description">
+      <%= simple_format(@artist.description) %>
+    </div>
+  </div>
+
+  <div class="column_2">
+    <h3><%= I18n.l @artist.chosen_date, format: :artist_page %></h3>
+    <h6>PARQUE DE PALMELA, CASCAIS</h6>
+    <div class="spotify">
+      <iframe src="https://embed.spotify.com/?uri=<%= @artist.spotify %>" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+
+
+    <ul class="links">
+      <% if !@artist.website_url.blank? %>
+        <li>
+          <%= link_to @artist.website, target: "blank" do %>
+            <i class="fa fa-link" aria-hidden="true"></i><%= @artist.website_url %>
+          <% end%>
+        </li>
+      <% end %>
+
+      <% if !@artist.facebook_url.blank? %>
+        <li>
+          <%= link_to @artist.facebook, target: "blank" do %>
+            <i class="fa fa-facebook" aria-hidden="true">&nbsp;</i><%= @artist.facebook_url %>
+          <% end%>
+        </li>
+      <% end %>
+
+      <% if !@artist.twitter_url.blank? %>
+        <li>
+          <%= link_to @artist.twitter, target: "blank" do %>
+            <i class="fa fa-twitter" aria-hidden="true"></i><%= @artist.twitter_url %>
+          <% end%>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+
+  <div class="videos">
+    <% @artist.videos.each do |video| %>
+      <% video = video.gsub("watch?v=", "embed/") %>
+      <iframe class="video"
+      src="<%= video %>" frameborder="0" allowfullscreen modestbranding="1" rel="0">
+      </iframe>
+    <% end %>
+  </div>
+</div>
+
+
+<%#= @artist.chosen_date %>
+<%#= @artist.description %>

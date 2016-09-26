@@ -1,0 +1,256 @@
+/* Page */
+html
+{
+
+}
+
+body
+{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: $normal_font;
+	color: $text_dark;
+	overflow-x: hidden;
+}
+
+form
+{
+	display: inline-block;
+}
+
+a, a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+		color: $text_light;
+}
+
+a:hover
+{
+  cursor: pointer;
+}
+
+/* Fixed classes */
+.center
+{
+	text-align: center;
+}
+
+.min_width_full
+{
+	min-width: 100%;
+}
+
+.left
+{
+	text-align: left;
+	float: left;
+}
+
+.right
+{
+	text-align: right;
+	float: right;
+}
+
+.highlight
+{
+	color: $text_highlight;
+}
+
+.white_space
+{
+	margin-top: 100px;
+}
+
+.container
+{
+	display: inline-block;
+	@include span(12 of 12);
+	float: none;
+}
+
+.bold
+{
+	font-weight: $bold_font;
+}
+
+.text_dark
+{
+	color: $text_dark;
+}
+
+.margin_right
+{
+	margin-right: 20px;
+}
+
+/* Text */
+h1
+{
+	font-size: 52px;
+	font-weight: $extra_bold_font;
+	color: $text_white;
+}
+
+h2
+{
+	font-size: 40px;
+	font-weight: $bold_font;
+	color: $text_dark;
+}
+
+h3
+{
+	font-size: 32px;
+	font-weight: $semi_bold_font;
+	color: $text_light;
+}
+
+h4
+{
+	font-size: 24px;
+	font-weight: $semi_bold_font;
+	color: $text_light;
+	margin: 0px;
+}
+
+h5
+{
+	font-size: 28px;
+	font-weight: $bold_font;
+	color: $text_light;
+	margin: 12px;
+}
+
+h6
+{
+	font-size: 18px;
+	font-weight: $bold_font;
+	color: $text_light;
+	margin: 8px;
+}
+
+p
+{
+	font-size: 20px;
+	font-weight: semi_bold_font;
+	color: $text_light;
+	line-height: 30px;
+}
+
+.dark_text
+{
+	color: $text_dark;
+}
+
+/* Buttons */
+.primary_button
+{
+	border: none;
+	border-radius: 4px;
+	font-weight: $bold_font;
+	background-color: $primary_button_background;
+	color: $primary_button_text;
+	box-shadow: 0px 4px 0px $primary_button_shadow;
+	cursor: pointer;
+	outline: none;
+}
+
+.primary_button:hover
+{
+	border: none;
+	border-radius: 4px;
+	font-weight: $bold_font;
+	background-color: $primary_button_hover;
+	color: $primary_button_text;
+	box-shadow: 0px 4px 0px $primary_button_shadow;
+	cursor: pointer;
+	outline: none;
+}
+
+.primary_button:active
+{
+	border: none;
+	border-radius: 4px;
+	font-weight: $bold_font;
+	background-color: $primary_button_clicked;
+	color: $primary_button_text;
+	box-shadow: 0px 4px 0px $primary_button_shadow;
+	cursor: pointer;
+	outline: none;
+}
+
+.secundary_button
+{
+
+}
+
+.danger_button
+{
+
+}
+
+.small_button
+{
+
+}
+
+.medium_button
+{
+	padding: 16px 20px 16px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.large_button
+{
+
+}
+
+
+
+/* Owl slider */
+.owl_content
+{
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.owl-controls
+{
+	position: absolute;
+    bottom: 30px;
+    min-width: 100%;
+}
+
+.home_image
+{
+	max-width: 100%;
+}
+
+.header_text
+{
+	min-width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+}
+
+.main_slider_text
+{
+	top: 340px;
+}
+
+.sub_slider_text
+{
+	top: 420px;
+}
+
+.image_over_slider
+{
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+	top: 140px;
+	max-width: 240px;
+}
